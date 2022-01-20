@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/mainWindow">
+
+    <fragment
+        android:id="@+id/mainWindow"
+        android:name="com.example.a02_eeapp.MainWindow"
+        android:label="MainWindow" >
+        <action
+            android:id="@+id/action_mainWindow_to_statistikFragment"
+            app:destination="@id/statistikFragment" />
+        <action
+            android:id="@+id/action_mainWindow_to_chooseTypeMathe"
+            app:destination="@id/chooseTypeMathe" />
+        <action
+            android:id="@+id/action_mainWindow_to_chooseTypeDeutsch"
+            app:destination="@id/chooseTypeDeutsch" />
+    </fragment>
+    <fragment
+        android:id="@+id/statistikFragment"
+        android:name="com.example.a02_eeapp.StatistikFragment"
+        android:label="StatistikFragment" />
+    <fragment
+        android:id="@+id/chooseTypeMathe"
+        android:name="com.example.a02_eeapp.ChooseTypeMathe"
+        android:label="ChooseTypeMathe" >
+        <action
+            android:id="@+id/action_chooseTypeMathe_to_matheQuiz"
+            app:destination="@id/matheQuiz" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseTypeDeutsch"
+        android:name="com.example.a02_eeapp.ChooseTypeDeutsch"
+        android:label="fragment_choose_type_deutsch"
+        tools:layout="@layout/fragment_choose_type_deutsch" >
+        <action
+            android:id="@+id/action_chooseTypeDeutsch_to_deutschQuiz"
+            app:destination="@id/deutschQuiz" />
+        <action
+            android:id="@+id/action_chooseTypeDeutsch_to_deutschQuizSelf"
+            app:destination="@id/deutschQuizSelf" />
+    </fragment>
+    <fragment
+        android:id="@+id/matheQuiz"
+        android:name="com.example.a02_eeapp.MatheQuiz"
+        android:label="fragment_mathe_quiz"
+        tools:layout="@layout/fragment_mathe_quiz" >
+        <action
+            android:id="@+id/action_matheQuiz_to_finish"
+            app:destination="@id/finish" />
+    </fragment>
+    <fragment
+        android:id="@+id/deutschQuiz"
+        android:name="com.example.a02_eeapp.DeutschQuiz"
+        android:label="fragment_deutsch_quiz"
+        tools:layout="@layout/fragment_deutsch_quiz" >
+        <action
+            android:id="@+id/action_deutschQuiz_to_finish"
+            app:destination="@id/finish" />
+    </fragment>
+    <fragment
+        android:id="@+id/deutschQuizSelf"
+        android:name="com.example.a02_eeapp.DeutschQuizSelf"
+        android:label="fragment_deutsch_quiz_self"
+        tools:layout="@layout/fragment_deutsch_quiz_self" >
+        <action
+            android:id="@+id/action_deutschQuizSelf_to_finish"
+            app:destination="@id/finish" />
+    </fragment>
+    <fragment
+        android:id="@+id/finish"
+        android:name="com.example.a02_eeapp.Finish"
+        android:label="fragment_finish"
+        tools:layout="@layout/fragment_finish" >
+        <action
+            android:id="@+id/action_finish_to_mainWindow"
+            app:destination="@id/mainWindow" />
+    </fragment>
+</navigation>

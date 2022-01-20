@@ -1,0 +1,103 @@
+.table > tbody > tr > td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+thead {
+    vertical-align: middle;
+    text-align: center;
+}
+
+@media screen {
+    h1 {
+        text-align: center;
+    }
+
+    .try-to-center {
+        vertical-align: middle;
+    }
+
+    #right-items {
+        direction: rtl;
+        float: right;
+        margin-top: 0.5rem;
+        margin-right: 5rem;
+    }
+
+    .center-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+    }
+
+    label {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        text-align: center;
+        width: 400px;
+        line-height: 26px;
+        margin-bottom: 10px;
+    }
+      
+    input {
+        height: 30px;
+        flex: 0 0 200px;
+        margin-left: 10px;
+    }
+  }
+       
+@media print {
+
+    html, body {
+        margin:0;
+        padding:0;
+        overflow-x: hidden;
+    }
+
+    #right-items {
+        visibility:hidden;
+    }
+
+    h1 {
+        display:none;
+    }
+
+    form {
+        display:none;
+    }
+
+    table tr td:nth-child(3){
+        display:none;
+    }
+
+    table tr td:nth-child(5){
+        display:none;
+    }
+
+    table tr td:nth-child(6){
+        display:none;
+    }
+    
+    table tr td:nth-child(7){
+        display:none;
+    }
+
+    pre, blockquote {page-break-inside: avoid !important ;}
+
+    tr {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+    
+}
+
+
+#printableArea {
+    font-size: 50px;
+}

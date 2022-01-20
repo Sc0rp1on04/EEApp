@@ -1,0 +1,29 @@
+{% extends 'base.html' %} 
+
+{% block content %} 
+
+  <h2>Sign up</h2> 
+  <form method="post"> 
+    {% csrf_token %} 
+      <p> 
+        <label>Username:</label><br><input type="text" name="username"/> 
+        <br> 
+          <label>Password:</label><br><input type="password" name="password1"/> 
+        <br> 
+          <label>Retype Password:</label><br><input type="password" name="password2"/> 
+      </p> 
+    <button type="submit" class="btn bg-light btn-outline-dark">Sign up</button> 
+    or 
+    <a href="{% url 'login' %}" class="btn bg-light btn-outline-dark">Login</a> 
+      <br><br> 
+      {%  for field in form %} {# show all errors after submit #} 
+          {% if field.errors %} 
+              <p style="color: red">{{ field.name }}: <br> 
+              {% for error in field.errors %} 
+                  - {{ error }} <br> 
+              {% endfor %} 
+              </p> 
+              {%  endif %} 
+      {% endfor %} 
+  </form> 
+{% endblock %} 

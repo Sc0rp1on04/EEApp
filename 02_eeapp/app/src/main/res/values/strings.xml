@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">02_eeapp</string>
+    <string name="background">background</string>
+    <string name="mathe">Mathematik</string>
+    <string name="deutsch">Deutsch</string>
+    <string name="statistik">Statistik</string>
+    <string name="monster">Monster</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textview">TextView</string>
+    <string name="sheeeesh">sheeeesh</string>
+    <string name="fromdb">fromDB</string>
+    <string name="mathe_status">Mathe Status</string>
+    <string name="deutsch_status">Deutsch Status</string>
+    <string name="fortschritt">Fortschritt</string>
+    <string name="l_se_die_rechnung">Löse die Rechnung:</string>
+    <string name="finde_die_zeit">Finde die Zeit:</string>
+    <string name="_10_10">10/10</string>
+    <string name="test">test</string>
+    <string name="welche_wortart_ist">Welche Wortart ist:</string>
+    <string name="congrats">Gratuliere!</string>
+    <string name="lernfortschritt">Lernfortschritt:</string>
+    <string name="startseite">Startseite</string>
+    <string name="ende">Ende</string>
+    <string name="artikel">Artikel</string>
+    <string name="namenwort">Namenwort</string>
+    <string name="zeitwort">Zeitwort</string>
+    <string name="eigenschaftswort">Eigenschaftswort</string>
+    <string name="senden">senden</string>
+    <string name="richtig_x_falsch_y">Richtig: x Falsch: y</string>
+    <string name="gw_gegenwart"></string>
+    <string name="gw_gegenwart_nmv_mitvergangenheit_nv_vergangenheit_nz_zukunft">GW = Gegenwart \nMV = Mitvergangenheit \nV = Vergangenheit \nZ = Zukunft</string>
+    <string name="mathe_stat">Mathe:</string>
+    <string name="deutsch_stat">Deutsch Zeiten:</string>
+    <string name="deutsch_stat_w">Deutsch Wortarten:</string>
+    <string-array name="malreihen">
+        <item>Mix</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="range">
+        <item>50</item>
+        <item>100</item>
+        <item>1000</item>
+    </string-array>
+</resources>

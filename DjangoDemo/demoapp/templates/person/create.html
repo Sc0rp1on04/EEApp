@@ -1,0 +1,23 @@
+{% extends 'base.html' %} 
+
+{% block content %} 
+<h2 style="margin-left: 1em;">Create a new Person</h2> 
+<form method="post" style="margin-left: 2em;" action="{% url 'person_store_route' %}"> 
+    {% csrf_token %} 
+    <p>
+        <strong>Firstname:</strong> 
+        <input type="text" name="firstname"/> 
+    </p> 
+    <p> 
+        <strong>Lastname</strong> 
+        <input type="text" name="lastname"/> 
+    </p> 
+    <p>
+        <strong>Klassenbezeichnung:</strong> 
+        <input type="text" name="vsclass"/> 
+    </p> 
+    <p> 
+        <button type="submit" class="btn btn-outline-info">Create</button> 
+    </p> 
+</form> 
+{% endblock content %} 

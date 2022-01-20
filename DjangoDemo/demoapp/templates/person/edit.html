@@ -1,0 +1,15 @@
+{% extends 'base.html' %} 
+
+{% block content %} 
+<h1 style="margin-left: 1em;">Edit Person Details:</h1>
+<form method="post" style="margin-left: 2em;" action="{% url 'person_update_route' person.id %}"> 
+    {% csrf_token %} 
+    <p>Id: {{ person.id }}</p> 
+    <p>Vorname: <input name="firstname" value="{{ person.firstname }}"/></p> 
+    <p>Nachname: <input name="lastname" value="{{ person.lastname }}"/></p> 
+    <p>Klasse: <input name="age" value="{{ person.age }}"/></p> 
+    <button type="submit" class="btn btn-outline-warning">Save</button> 
+    &nbsp; 
+    <a href="{% url 'person_index_route' %}" class="btn btn-outline-warning">All People</a> 
+</form> 
+{% endblock content %} 
